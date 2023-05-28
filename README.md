@@ -1,5 +1,12 @@
 # Automated-Guitar Amplifier Modelling
 
+This fork adds a phase alignment step for training data. 
+
+Usage: `train.sh <config name> <input.wav> <output.wav>`
+
+
+
+
 ## GuitarML Fork
 This fork adds Colab Training, wav file pre-processing, results plotting, and some helpful printouts during training.
 Use the example config "config/RNN3-acoustic1-pre.json" to train models for [NeuralPi](https://github.com/GuitarML/NeuralPi)<br>
