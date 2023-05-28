@@ -4,7 +4,6 @@ Results/*/*
 !Results/*/model_best.json
 !Results/*/model.json
 !Results/*/testloss_final.txt
-*.sh
 slurm*
 runs
 .idea/
@@ -30,17 +29,5 @@ Configs/*
 !Configs/Parameterization-Config.json
 !Configs/Parameterization-Config-2.json
 Data/*
-!Data/test/ht1-input.wav
-!Data/test/ht1-target.wav
-!Data/train/ht1-input.wav
-!Data/train/ht1-target.wav
-!Data/val/ht1-input.wav
-!Data/val/ht1-target.wav
-!Data/train/muff-input.wav
-!Data/train/muff-target.wav
-!Data/test/muff-input.wav
-!Data/test/muff-target.wav
-!Data/val/muff-input.wav
-!Data/val/muff-target.wav
 Recordings/
 runs2/
