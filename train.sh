@@ -12,6 +12,9 @@ python prep_wav.py "$CONFIG" -n 1 -rs 20 -s "Data/aligned/$(basename $INPUT)" "D
 python dist_model_recnet.py -l "RNN3-$CONFIG"  --pre_filt None -lm 0
 
 output_fbname=$(basename "$OUTPUT" | cut -d. -f1)
-mv "Results/$CONFIG/model_best.json" "Results/$CONFIG/$output_fbname_best.json"
+config_file="RNN3-$CONFIG.json"
+device_name=$(cat "Configs/$config_file" | jq -r ".device")
+results_dir="Results/$device_name-$CONFIG"
+mv "$results_dir/model_best.json" "$results_dir/$output_fbname_best.json"
 
 echo -e '\a'
